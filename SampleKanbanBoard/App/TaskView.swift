@@ -13,18 +13,36 @@ struct TaskView: View {
     @State var storyPoints: Int
     
     var body: some View {
-        VStack {
-            Text(name)
-                .font(.title)
-                .padding(.top)
-            Text("Story Points - \(storyPoints)")
-                .font(.title2)
+        HStack (alignment: .bottom) {
+            VStack (alignment: .leading, spacing: 10) {
+                Text(name)
+                    .font(.title2)
+                    .foregroundStyle(.black)
+                HStack {
+                    Image("ic-task-type")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                    Text("CT-123")
+                        .font(.title3)
+                        .foregroundStyle(.black)
+                }
+            }
+            .padding()
+            Spacer()
+            Image("ic-profile")
+                .resizable()
+                .frame(width: 20, height: 20)
+                .clipShape(Circle())
                 .padding()
         }
         .frame(maxWidth: .infinity)
-        .background(.gray)
+        .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .zIndex(2)
     }
 }
 
+#Preview {
+    TaskView(name: "CT-121", storyPoints: 6)
+}

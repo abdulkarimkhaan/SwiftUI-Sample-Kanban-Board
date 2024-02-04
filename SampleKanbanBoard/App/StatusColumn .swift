@@ -13,13 +13,14 @@ struct StatusColumn: View {
     @State var tasks: [Task]
     
     var body: some View {
-        VStack (alignment: .leading) {
-            Text(name)
-                .font(.title)
-                .bold()
-                .foregroundStyle(.white)
-            ZStack {
-                Color.white.ignoresSafeArea()
+        ZStack {
+            Color.gray.opacity(0.45).ignoresSafeArea()
+            VStack (alignment: .leading) {
+                Text(name)
+                    .font(.title)
+                    .bold()
+                    .foregroundStyle(.black)
+                    .padding()
                 VStack (spacing: 10) {
                     List(tasks, id: \.self) { task in
                         TaskView(name: task.name, storyPoints: task.storypoints)
@@ -28,14 +29,15 @@ struct StatusColumn: View {
                     }
                     .listStyle(.plain)
                     .scrollContentBackground(.hidden)
+                    .scrollIndicators(.hidden)
                     .background(.clear)
                     Spacer()
                 }
                 .frame(maxWidth: .infinity)
-                .padding()
             }
         }
         .frame(height: 500)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 
