@@ -11,7 +11,8 @@ struct StatusColumn: View {
     
     @State var name: String
     @State var tasks: [Task]
-    
+    @Binding var theColorScheme: ColorScheme
+
     var body: some View {
         ZStack {
             Color.gray.opacity(0.45).ignoresSafeArea()
@@ -19,7 +20,7 @@ struct StatusColumn: View {
                 Text(name)
                     .font(.title)
                     .bold()
-                    .foregroundStyle(.black)
+                    .foregroundStyle((theColorScheme == .dark) ? .white : .black)
                     .padding()
                 VStack (spacing: 10) {
                     List(tasks, id: \.self) { task in

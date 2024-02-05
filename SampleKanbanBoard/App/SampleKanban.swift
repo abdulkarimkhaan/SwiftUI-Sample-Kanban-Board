@@ -16,17 +16,18 @@ struct SampleKanban: View {
     ]
     
     @State var draggingTask: Task?
+    @State var theColorScheme: ColorScheme = .dark
 
     var body: some View {
         VStack {
             Spacer()
             Text("SwiftUI Sample Kanban Board")
-                .foregroundStyle(.black)
+                .foregroundStyle((theColorScheme == .dark) ? .white : .black)
                 .font(.system(size: 40))
                 .bold()
             HStack {
                 ForEach($progress, id: \.self) { $progressStatus in
-                    StatusColumn(name: progressStatus.name, tasks: progressStatus.tasks)
+                    StatusColumn(name: progressStatus.name, tasks: progressStatus.tasks, theColorScheme: $theColorScheme)
                         .dropDestination(for: Task.self) { droppedTasks, location in
                             draggingTask = droppedTasks.first
                             var temp: [ProgressStatus] = []
@@ -54,16 +55,27 @@ struct SampleKanban: View {
             .padding()
             Spacer()
             HStack {
+                Button(action: self.toggleColorScheme) {
+                    Text((theColorScheme == .dark) ? "Enable Light Mode" : "Enable Dark Mode")
+                        .font(.title3)
+                }
+                .padding()
+                .background(.gray)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
                 Spacer()
                 Text("ABDUL KARIM KHAN")
-                    .foregroundStyle(.black)
+                    .foregroundStyle((theColorScheme == .dark) ? .white : .black)
                     .font(.system(size: 16))
                     .bold()
                     .padding()
             }
         }
         .frame(width: 900)
-        .background(.white)
+        .background((theColorScheme == .dark) ? .black : .white)
+    }
+    
+    func toggleColorScheme() {
+        theColorScheme = (theColorScheme == .dark) ? .light : .dark
     }
 }
 

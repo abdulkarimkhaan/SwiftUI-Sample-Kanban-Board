@@ -60,10 +60,9 @@
 		842CF3742B6E2D5100816FEF /* SampleKanbanBoard */ = {
 			isa = PBXGroup;
 			children = (
+				84993B932B71230E00E04529 /* Utilities */,
 				842CF3882B6E599700816FEF /* App */,
 				842CF3752B6E2D5100816FEF /* SampleKanbanBoardApp.swift */,
-				842CF3862B6E55CB00816FEF /* ProjectStrructsAndEnums.swift */,
-				842CF38B2B6EEE8500816FEF /* ProjectExtensions.swift */,
 				842CF3792B6E2D5200816FEF /* Assets.xcassets */,
 				842CF37E2B6E2D5200816FEF /* SampleKanbanBoard.entitlements */,
 				842CF37B2B6E2D5200816FEF /* Preview Content */,
@@ -87,6 +86,15 @@
 				842CF3892B6EBB6800816FEF /* TaskView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		84993B932B71230E00E04529 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				842CF3862B6E55CB00816FEF /* ProjectStrructsAndEnums.swift */,
+				842CF38B2B6EEE8500816FEF /* ProjectExtensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
