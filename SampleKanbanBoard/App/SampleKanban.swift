@@ -16,7 +16,7 @@ struct SampleKanban: View {
     ]
     
     @State var draggingTask: Task?
-    @State var theColorScheme: ColorScheme = .dark
+    @State var theColorScheme: ColorScheme = .light
 
     var body: some View {
         VStack {
