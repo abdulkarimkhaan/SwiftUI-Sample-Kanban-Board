@@ -26,4 +26,4 @@ https://github.com/abdulkarimkhaan/SwiftUI-Sample-Kanban-Board/assets/49764851/4
 [license-shield]: https://img.shields.io/github/license/abdulkarimkhaan/SwiftUIComponents.svg?style=for-the-badge
 [license-url]: https://github.com/abdulkarimkhaan/SwiftUIComponents/blob/master/LICENSE.txt
 [youtube-shield]: https://img.shields.io/badge/-YouTube-red.svg?style=for-the-badge&logo=youtube&colorB=FF0000
-[youtube-url]: https://www.youtube.com/@abdulkarimkhaan
+[youtube-url]: https://www.youtube.com/watch?v=bcJGuHrU8uo
