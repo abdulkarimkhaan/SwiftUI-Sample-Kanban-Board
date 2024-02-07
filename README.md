@@ -19,10 +19,10 @@ SwiftUI: Built entirely with SwiftUI for a modern and responsive user interface.
 
 ## Getting Started
 Prerequisites
-Xcode (Version 14.1 or later)
-macOS (Version 13.0+ or later)
-iOS device or simulator
-macOS device or simulator
+1. Xcode (Version 14.1 or later)
+2. macOS (Version 13.0+ or later)
+3. iOS device or simulator
+4. macOS device or simulator
 
 ## Installation
 ### Clone the repository: 
