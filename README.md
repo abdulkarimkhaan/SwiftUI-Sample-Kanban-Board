@@ -9,28 +9,28 @@
 
 # SwiftUI Sample Kanban Board using "draggable and dropDestination" APIs.
 
-##Overview
+## Overview
 This project demonstrates the implementation of a custom Kanban board using SwiftUI's draggable and dropDestination features. The Kanban board is a visual project management tool that allows you to organize tasks into different stages of completion.
 
-##Features
+## Features
 Drag-and-Drop: Intuitive drag-and-drop functionality to move tasks between different stages.
 Customizable: Easily customize the board with your own task categories and colors.
 SwiftUI: Built entirely with SwiftUI for a modern and responsive user interface.
 
-##Getting Started
+## Getting Started
 Prerequisites
 Xcode (Version 14.1 or later)
 macOS (Version 13.0+ or later)
 iOS device or simulator
 macOS device or simulator
 
-##Installation
-###Clone the repository: 
+## Installation
+### Clone the repository: 
 1. git clone https://github.com/abdulkarimkhaan/SwiftUI-Sample-Kanban-Board.git
 2. Open the project in Xcode.
 3. Build and run the project on your macOS device or simulator.
 
-##Usage
+## Usage
 Open the app on your macOS device or simulator.
 Drag tasks from one column to another to update their status.
 Customize the board by modifying the task categories and colors in the code.
@@ -43,7 +43,7 @@ https://github.com/abdulkarimkhaan/SwiftUI-Sample-Kanban-Board/assets/49764851/4
 If you'd like to contribute to this project, please follow the Contributing Guidelines.
 
 ## License
-This project is licensed under the [![MIT License][license-shield]][license-url].
+This project is licensed under the [MIT License][license-url].
 
 ## Acknowledgments
 Inspired by the Kanban methodology.
